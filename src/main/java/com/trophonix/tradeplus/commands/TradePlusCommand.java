@@ -99,7 +99,7 @@ public class TradePlusCommand implements CommandExecutor, TabCompleter {
     MsgUtils.send(
         sender,
         new String[] {
-          "&6&l<----- Trade+ by Trophonix ----->",
+          "&6&l<----- Trade+ by Trophonix, Bobcat ----->",
           "&e/trade <player> &fSend a trade request",
           "&e/tradeplus reload &fReload config files",
           "&e/tradeplus force <player1> <player2> &fForce 2 players to trade"

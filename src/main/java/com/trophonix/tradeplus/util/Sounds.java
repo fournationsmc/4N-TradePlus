@@ -15,8 +15,8 @@ public class Sounds {
   private static Sound villagerHmm;
 
   static {
-    String[] split =
-        Bukkit.getServer().getClass().getPackage().getName().split("\\.")[3].split("_");
+    //String[] split = Bukkit.getServer().getClass().getPackage().getName().split("\\.")[3].split("_");
+    String[] split = Bukkit.getServer().getBukkitVersion().split("\\.");
     version = Integer.parseInt(split[0].replace("v", "") + split[1]);
 //    System.out.println("You appear to be running version " + version);
   }
@@ -44,8 +44,8 @@ public class Sounds {
       }
     } catch (IllegalArgumentException | NullPointerException | NoSuchFieldError ex) {
       Bukkit.getConsoleSender()
-          .sendMessage(
-              ChatColor.DARK_RED + "Unable to load sounds! Sound effects will be disabled.");
+              .sendMessage(
+                      ChatColor.DARK_RED + "Unable to load sounds! Sound effects will be disabled.");
     }
   }
 
